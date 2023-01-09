@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import Users from "../03-forms/pages/Users"
 import About from "../03-forms/pages/About"
 import Home from "../03-forms/pages/Home"
-import {FormikAbstrasction,FormikBasicPage,FormikComponents,FormikYupPage,RegisterPage} from "../03-forms/pages/index"
+import {FormikAbstrasction,FormikBasicPage,FormikComponents,FormikYupPage,RegisterPage,RegisterFormikPage, DynamicForm} from "../03-forms/pages/index"
 export const Navigation = () => {
     return (
       <BrowserRouter>
@@ -39,6 +39,12 @@ export const Navigation = () => {
               <li>
                 <NavLink to="/formikAbstraction">formikAbstraction</NavLink>
               </li>
+              <li>
+                <NavLink to="/RegisterFormikPage">RegisterFormikPage</NavLink>
+              </li>
+              <li>
+                <NavLink to="/DynamicForm">DynamicForm</NavLink>
+              </li>
             </ul>
           </nav>
   
@@ -62,6 +68,12 @@ export const Navigation = () => {
             </Route>
             <Route path="/formikAbstraction" element={<FormikAbstrasction/>}>
             formikAbstraction
+            </Route>
+            <Route path="/RegisterFormikPage" element={<RegisterFormikPage/>}>
+            RegisterFormikPage
+            </Route>
+            <Route path="/DynamicForm" element={<DynamicForm/>}>
+            RegisterFormikPage
             </Route>
             <Route path="/users" element={<Users/>}>
               Users

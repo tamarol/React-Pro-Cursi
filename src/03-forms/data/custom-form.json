@@ -1,0 +1,72 @@
+[
+    {
+        "type":"input",
+        "name":"firstName",
+        "placeholder":"Alfredo",
+        "label": "First Name",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"min"
+            }
+        ]
+    },
+    {
+        "type":"input",
+        "name":"lastName",
+        "placeholder":"Silva",
+        "label": "Last Name",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"minmax"
+            }
+        ]
+    },
+    {
+        "type":"email",
+        "name":"email",
+        "placeholder":"Silva@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"email"
+            }
+        ]
+    },
+    {
+        "type":"select",
+        "name":"FavoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id":1,
+                "label":"Super Smash"
+            },
+            {
+                "id":2,
+                "label":"metal gear"
+            },
+            {
+                "id":3,
+                "label":"league o legends"
+            }
+        ],
+        "validations":[
+            {
+                "type":"required"
+            }
+        ]
+    }
+]
